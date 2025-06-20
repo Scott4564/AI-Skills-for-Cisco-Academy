@@ -1,0 +1,109 @@
+
+
+CISCO SCOTT STEVENSON PROMPT ENGINEERING
+Context
+- You are an experienced IT consultant
+Objective
+- identify key steps to improve system efficiency and longevity
+Audience
+- client 
+Scenario
+- You are teaching a 
+Task
+- create detailed routine preventative maintenance on a windows 11 computer to keep it running efficiently
+
+
+- You are an experienced IT consultant. I am a client who wants to improve their personal computer system efficiency. Create a detailed routine for preventative maintenance on a windows 11 computer to keep it running efficiently.
+
+--------------------------------------------------------
+
+
+
+Context
+- Act as an experienced computer lab technician
+Objective
+- Identify and solve causes of frequent personal computer freezes or crashes
+Audience
+- computer lab user
+Scenario
+- 
+Task
+- create a list of causes for computer crashes without error messages and list solutions to each cause
+
+Act as an experienced computer lab technician. You must identify and solve causes of a computer that frequently crashes. create a list of causes for computer crashes without error messages and list solutions to each cause
+
+--------------------------------------------------------
+
+
+
+High pass/low pass filters
+
+'''
+Given that a signal is sent across a capacitor in series to a resistor. If a load is parallel to the resistor how will the input signal be effected?
+a. the output signal will be amplified
+b. the output signal will only have low frequencies
+c. the output signal will only have high frequencies
+d. the output signal will only have frequencies in the middle
+'''
+
+You are a digital circuits instructor creating a quiz for high school students on signal filter types. You need to create a question bank, answer key, and explanation that students can check. Write 5 similar questions on capacitor and inductor low pass, high pass, band pass filters with a one sentence explanation using impedance:
+
+'''
+Given that a signal is sent across a capacitor in series to a resistor. If a load is parallel to the resistor how will the input signal be effected?
+a. the output signal will be amplified
+b. the output signal will only have low frequencies
+c. the output signal will only have high frequencies
+d. the output signal will only have frequencies in the middle
+
+answer: c
+
+'''
+
+1.
+Given that a signal is sent across a capacitor in series to a resistor. If a load is parallel to the resistor how will the input signal be affected?
+a. the output signal will be amplified
+b. the output signal will only have low frequencies
+c. the output signal will only have high frequencies
+d. the output signal will only have frequencies in the middle
+Answer: c
+Explanation: At high frequencies, the capacitor's impedance becomes very low, allowing high-frequency signals to pass through to the resistor and load.
+
+2.
+A resistor is in series with an inductor, and a load is connected across the inductor. How will the signal be affected?
+a. the output signal will only have low frequencies
+b. the output signal will only have high frequencies
+c. the output signal will be amplified
+d. the output signal will be blocked
+Answer: a
+Explanation: At low frequencies, the inductor’s impedance is low, so low-frequency signals appear across the inductor and reach the load.
+
+3.
+A capacitor is in series with a resistor, and the output is taken across the resistor. What kind of filter is this and what frequencies pass through?
+a. Band-pass; mid frequencies
+b. High-pass; high frequencies
+c. Low-pass; low frequencies
+d. High-pass; low frequencies
+Answer: b
+Explanation: The capacitor blocks low frequencies due to high impedance at low frequency, so only high frequencies reach the resistor.
+
+4.
+An inductor is in series with a resistor, and the output is taken across the resistor. What type of filter does this form?
+a. Low-pass filter
+b. High-pass filter
+c. Band-stop filter
+d. Amplifier
+Answer: a
+Explanation: The inductor's impedance increases with frequency, so it blocks high frequencies and allows low ones to pass to the resistor.
+
+5.
+A signal passes through a capacitor, then an inductor, and the output is taken between them. How will the input signal be affected?
+a. only low frequencies pass
+b. only high frequencies pass
+c. only middle frequencies pass
+d. all frequencies are blocked
+Answer: c
+Explanation: A capacitor blocks low frequencies and an inductor blocks high frequencies, so only mid-range frequencies pass, forming a band-pass filter.
+
+
+--------------------------------------------------------
+
