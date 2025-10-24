@@ -1,0 +1,54 @@
+jhwells
+using copilot w/ gpt-5
+--------------------------------------------
+Generate the sequence of commands to enter in the command line interface for the following scenario:
+
+Use a Cisco router configuration with three active ethernet interfaces and one serial interface
+Assign IP addresses using variable-length subnet masks based on the following requirements:
+The serial interface should be configured in a /30 subnet (point-to-point link).
+The remaining three ethernet interfaces should be assigned subnets appropriate for small, medium, and large LANs respectively.
+Include interface descriptions, IP addressing, subnet masks, and basic routing configuration.
+Assume the router is using EIGRP routing.
+Use standard Cisco IOS syntax.
+Include comments explaining the subnet choices and configuration logic.
+
+
+! Enter global configuration mode
+configure terminal
+
+! Configure Serial interface (point-to-point /30)
+interface Serial0/0/0
+ description Point-to-Point Link to ISP
+ ip address 192.168.1.1 255.255.255.252
+ no shutdown
+
+! Configure Ethernet interface for Small LAN (/29)
+interface GigabitEthernet0/0
+ description Small LAN - up to 6 hosts
+ ip address 192.168.10.1 255.255.255.248
+ no shutdown
+
+! Configure Ethernet interface for Medium LAN (/26)
+interface GigabitEthernet0/1
+ description Medium LAN - up to 62 hosts
+ ip address 192.168.20.1 255.255.255.192
+ no shutdown
+! Configure Ethernet interface for Large LAN (/24)
+interface GigabitEthernet0/2
+ description Large LAN - up to 254 hosts
+ ip address 192.168.30.1 255.255.255.0
+ no shutdown
+
+! Enable EIGRP routing
+router eigrp 100
+ network 192.168.1.0 0.0.0.3       ! Covers /30 subnet
+ network 192.168.10.0 0.0.0.7      ! Covers /29 subnet
+ network 192.168.20.0 0.0.0.63     ! Covers /26 subnet
+ network 192.168.30.0 0.0.0.255    ! Covers /24 subnet
+ no auto-summary
+
+! Exit configuration mode
+end
+! Save configuration
+write memory
+``
